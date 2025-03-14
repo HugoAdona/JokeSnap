@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JokeSnap</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/ico" href="img/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Impact&family=Comic+Sans+MS&family=Helvetica&family=Arial+Black&family=Lato:wght@700&family=Futura&family=Gill+Sans&family=Bebas+Neue&family=Poppins:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>JokeSnap</h1>
+      <input
+        type="file"
+        id="imageUpload"
+        accept="image/*"
+        style="display: none"
+      />
+      <div class="meme-canvas" id="memeCanvasContainer">
+        <canvas id="memeCanvas"></canvas>
+        <div id="placeholder"><i class="fas fa-image fa-5x"></i></div>
+      </div>
+      <input type="text" id="topText" placeholder="Top Text" />
+      <input type="text" id="bottomText" placeholder="Bottom Text" />
+      <select id="fontSelect">
+        <option value="Impact">Impact</option>
+        <option value="Comic Sans MS">Comic Sans MS</option>
+        <option value="Helvetica">Helvetica</option>
+        <option value="Arial Black">Arial Black</option>
+        <option value="Lato">Lato</option>
+        <option value="Futura">Futura</option>
+        <option value="Gill Sans">Gill Sans</option>
+        <option value="Bebas Neue">Bebas Neue</option>
+        <option value="Poppins">Poppins</option>
+        <option value="Roboto">Roboto</option>
+      </select>
+      <button id="generateMeme">Generate Meme</button>
+      <button id="downloadMeme">Download Meme</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
